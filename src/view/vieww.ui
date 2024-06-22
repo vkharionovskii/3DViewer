@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>View</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>853</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>901</width>
+    <height>853</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>901</width>
+    <height>853</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="scene" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>901</width>
+      <height>851</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>660</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Line type&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="plus">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>620</y>
+       <width>101</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>zoom+</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>770</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Line width&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minus">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>670</y>
+       <width>101</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>zoom-</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_point_size">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>810</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider
+{
+border: 1px solid #bbb;
+width: 10px;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="maximum">
+      <number>80</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>770</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Point size&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>700</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Point form&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>630</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Frustum</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ortho</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_line_widht">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>810</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider
+{
+border: 1px solid #bbb;
+width: 10px;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="maximum">
+      <number>80</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_line_off">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>690</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Line off</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget1">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>590</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="radioButton_background">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Background</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_lines">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Lines</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_vertexes">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Vertexes</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>720</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="radioButton_circle">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Circle</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_square">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Square</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_empty">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Empty</string>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QComboBox" name="comboBox_line_type">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>690</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>solid line</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+     <property name="duplicatesEnabled">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>solid line</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dashed line</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dotted line</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>dot-dash line</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="ColorPalette" name="widget_pallete" native="true">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>640</y>
+       <width>261</width>
+       <height>199</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="openF">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>141</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    font: bold 14px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Open File</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Info">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>661</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel
+{
+	border-radius: 10px;
+	padding: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="zoom_x">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Zoom: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Screenshot">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>590</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Screenshot</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stop_and_save_GIF">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>590</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>GIF</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider_rotate_speed">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>670</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QSlider
+{
+border: 1px solid #bbb;
+width: 10px;
+border-radius: 4px;
+}</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="pageStep">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_reset">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>590</y>
+       <width>100</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	color: red;
+}</string>
+     </property>
+     <property name="text">
+      <string>RESET</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_xrot">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>40</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>X rotate: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_yrot">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>70</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Y Rotate: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_zrot">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>100</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Z rotate: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_y_shift">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>160</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Y shift: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_x_shift">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>130</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>X shift: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_z_shift">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>190</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>Z shift: 0.0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rgb_color_back">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>570</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string> 0 0 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_hide_info">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>630</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Hide Info</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rgb_color_vertexes">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>570</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>255 0 127</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rgb_color_lines">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>570</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="text">
+      <string>25 191 76</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_change_x">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>730</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="correctionMode">
+      <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+     </property>
+     <property name="prefix">
+      <string>X </string>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_change_z">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>810</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>Z </string>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_change_y">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>770</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>Y </string>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_RGB_color">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>545</y>
+       <width>58</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RGB</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>690</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Offset</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_x_plus_angle">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>730</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_x_minus_angle">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>730</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_y_minus_angle">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>770</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_z_plus_angle">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>810</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_z_minus_angle">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>810</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_y_plus_angle">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>770</y>
+       <width>21</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoRepeat">
+      <bool>true</bool>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>730</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X angle</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>810</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Z angle</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>770</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y angle</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_angle_x">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>730</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="correctionMode">
+      <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+     </property>
+     <property name="prefix">
+      <string>X </string>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_angle_y">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>770</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>Y </string>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_angle_z">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>810</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="prefix">
+      <string>Z </string>
+     </property>
+     <property name="decimals">
+      <number>0</number>
+     </property>
+     <property name="minimum">
+      <double>-99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_zoom">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>650</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QDoubleSpinBox
+{
+	border-radius: 5px;
+	margin: 2px;
+}
+
+QDoubleSpinBox::up-button {
+	 subcontrol-origin: border;
+     subcontrol-position: right;
+	width: 25px;
+	height: 20px;
+ }
+
+QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position:left;
+	width: 25px;
+	height: 20px;
+ }</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhFormattedNumbersOnly</set>
+     </property>
+     <property name="wrapping">
+      <bool>false</bool>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="buttonSymbols">
+      <enum>QAbstractSpinBox::NoButtons</enum>
+     </property>
+     <property name="specialValueText">
+      <string/>
+     </property>
+     <property name="correctionMode">
+      <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+     </property>
+     <property name="prefix">
+      <string>zoom </string>
+     </property>
+     <property name="decimals">
+      <number>3</number>
+     </property>
+     <property name="minimum">
+      <double>-10000000000000000000000.000000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999999999991433150857216.000000000000000</double>
+     </property>
+     <property name="singleStep">
+      <double>1.000000000000000</double>
+     </property>
+     <property name="stepType">
+      <enum>QAbstractSpinBox::DefaultStepType</enum>
+     </property>
+     <property name="value">
+      <double>1.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_auto_rotate">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>590</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Auto rotate</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_XYZ">
+     <property name="geometry">
+      <rect>
+       <x>232</x>
+       <y>620</y>
+       <width>111</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>640</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Speed rotate</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Timer_GIF">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>560</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <zorder>Info</zorder>
+    <zorder>label_5</zorder>
+    <zorder>plus</zorder>
+    <zorder>label</zorder>
+    <zorder>minus</zorder>
+    <zorder>horizontalSlider_point_size</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>horizontalSlider_line_widht</zorder>
+    <zorder>radioButton_line_off</zorder>
+    <zorder>layoutWidget1</zorder>
+    <zorder>layoutWidget2</zorder>
+    <zorder>comboBox_line_type</zorder>
+    <zorder>widget_pallete</zorder>
+    <zorder>openF</zorder>
+    <zorder>zoom_x</zorder>
+    <zorder>Screenshot</zorder>
+    <zorder>stop_and_save_GIF</zorder>
+    <zorder>horizontalSlider_rotate_speed</zorder>
+    <zorder>pushButton_reset</zorder>
+    <zorder>label_xrot</zorder>
+    <zorder>label_yrot</zorder>
+    <zorder>label_zrot</zorder>
+    <zorder>label_y_shift</zorder>
+    <zorder>label_x_shift</zorder>
+    <zorder>label_z_shift</zorder>
+    <zorder>label_rgb_color_back</zorder>
+    <zorder>radioButton_hide_info</zorder>
+    <zorder>label_rgb_color_vertexes</zorder>
+    <zorder>label_rgb_color_lines</zorder>
+    <zorder>doubleSpinBox_change_x</zorder>
+    <zorder>doubleSpinBox_change_z</zorder>
+    <zorder>doubleSpinBox_change_y</zorder>
+    <zorder>label_RGB_color</zorder>
+    <zorder>label_4</zorder>
+    <zorder>pushButton_x_plus_angle</zorder>
+    <zorder>pushButton_x_minus_angle</zorder>
+    <zorder>pushButton_y_minus_angle</zorder>
+    <zorder>pushButton_z_plus_angle</zorder>
+    <zorder>pushButton_z_minus_angle</zorder>
+    <zorder>pushButton_y_plus_angle</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_10</zorder>
+    <zorder>doubleSpinBox_angle_x</zorder>
+    <zorder>doubleSpinBox_angle_y</zorder>
+    <zorder>doubleSpinBox_angle_z</zorder>
+    <zorder>doubleSpinBox_zoom</zorder>
+    <zorder>radioButton_auto_rotate</zorder>
+    <zorder>comboBox_XYZ</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_Timer_GIF</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>scene</class>
+   <extends>QWidget</extends>
+   <header>scene.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ColorPalette</class>
+   <extends>QWidget</extends>
+   <header>colorpalette.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/pallete">
+        <file>color_map.png</file>
+    </qresource>
+</RCC>
